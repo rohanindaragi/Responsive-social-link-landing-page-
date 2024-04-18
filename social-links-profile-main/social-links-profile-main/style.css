@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Young+Serif&display=swap");
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter";
+}
+
+.container {
+  background-color: hsl(0, 0%, 12%);
+  width: 30vw;
+  height: 85vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border-radius: 10px;
+}
+
+.container .image img {
+  margin-left: 9.5em;
+  margin-top: 2em;
+  border-radius: 50%;
+  width: 90px;
+}
+
+.container .name h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-weight: 700;
+  font-size: larger;
+  margin-top: 1.2em;
+}
+
+.container .place h2 {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  text-align: center;
+  font-size: small;
+  padding-top: 0;
+}
+
+.container .paragraph p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(172, 171, 171);
+}
+
+.container .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.container .navbar button {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the value for desired spacing */
+  width: 300px;
+  margin-left: 3.3rem;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.container .navbar button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+/* for mobile view */
+
+@media screen and (max-width: 375px){
+  .container {
+    background-color: hsl(0, 0%, 12%);
+    width: 90vw;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    border-radius: 10px;
+  }
+  .container .image img {
+    margin-left: 8em;
+    margin-top: 1em;
+    border-radius: 50%;
+    width: 90px;
+  }
+  .container .place h2 {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    text-align: center;
+    font-size: small;
+    padding-top: 0;
+    margin-top: 2px;
+  }
+
+  .container .navbar button {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the value for desired spacing */
+    width: 300px;
+    margin-left: 1.2rem;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
